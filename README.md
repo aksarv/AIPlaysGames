@@ -1,2 +1,2 @@
-# PredatorPreySimulation
-Predator Prey Simulation
+# AIPlaysGames
+AI Plays Games
