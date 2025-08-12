@@ -214,7 +214,7 @@ while run:
                                             p.y + math.sin(p.angle + PREY_ANG) * (ENTITY_SIZE / 7 * 6 + 2)),
                            ENTITY_SIZE / 5)
 
-    # predators will always move closer to the nearest prey
+    # predators will always move closer to the nearest prey, and to do this optimally they'll rotate towards them as well as moving in their direction
     for pr in predators:
         try:
             best = min(prey, key=lambda l: math.hypot(l.y - pr.y, l.x - pr.x))
